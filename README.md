@@ -24,3 +24,40 @@ El propósito es observar las diferencias prácticas entre ambos mecanismos de t
 
 ## 📂 Estructura del proyecto
 
+TP6_CapaTransporte/
+│
+├── tcp/
+│ ├── servidor_tcp.py
+│ └── cliente_tcp.py
+│
+├── udp/
+│ ├── servidor_udp.py
+│ └── cliente_udp.py
+│
+└── README.md
+
+---
+
+## 🚀 Ejecución
+
+### 🔹 TCP (Orientado a conexión)
+
+1. Abrir una terminal y ejecutar el servidor:
+   python tcp/servidor_tcp.py
+   
+2. En otra terminal, ejecutar el cliente:
+python tcp/cliente_tcp.py
+
+📬 El cliente recibirá un mensaje con la hora actual y el número de conexión.
+
+---
+
+### 🔹 UDP (No orientado a conexión)
+
+1. Abrir una terminal y ejecutar el servidor:
+   python udp/servidor_udp.py
+
+2. En otra terminal, ejecutar el cliente:
+   python udp/cliente_udp.py
+
+📬 El cliente enviará un mensaje (“¿Qué hora es?”) y recibirá la respuesta del servidor sin establecer conexión.
